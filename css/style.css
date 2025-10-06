@@ -131,6 +131,13 @@ header{
     padding: 0;
 }
 
+.menu-toggle{
+    display: none; /* show it on smaller screens */
+    background: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
 /* ====== HERO SECTION ====== */
 main{
     max-width: 1400px;
@@ -209,7 +216,7 @@ blockquote{
     margin: 1rem auto;
 }
 
-/* ===== IMAGE SECTION  ===== */
+/* ====== IMAGE SECTION  ====== */
 .container{
     position: relative;
     display: flex;
@@ -307,4 +314,63 @@ blockquote{
 
 .ableton-video figcaption{
     padding-left: 1rem;
+}
+
+/* ====== MORE MENU ======*/
+.more-menu{
+    background: var(--color-light);
+    border-top: 1px solid #e5e5e5;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.more-menu h4{
+    margin-bottom: 1rem;
+}
+
+.more-menu ul{
+    padding: 0;
+}
+
+.more-menu li{
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.more-menu a{
+    color: var(--color-dark);
+}
+
+.more-menu a:hover{
+    color: var(--color-orange);
+}
+
+/* hidden by default*/
+.hidden{
+    display: none;
+}
+
+/* ====== MEDIA QUERIES ======*/
+/* --- Responsive More Menu --- */
+@media (max-width: 768px) {
+    .more-menu{
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .more-menu ul li{
+        font-size: 1rem;
+    }
+
+    .more-menu h4{
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+
 }
