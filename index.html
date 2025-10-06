@@ -7,6 +7,9 @@
     
     <!--Link to external CSS file-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,6 +41,10 @@
             </svg>
             </div>
 
+            <button class="menu-toggle" onclick="setOpenNav()">
+                Menu <i class="bx bx-caret-down"></i>
+            </button>
+
             <div class="nav-content">
                 <ul class="primary-nav-list">
                     <li class="nav-link-list-item"><a href="#">Live</a></li>
@@ -48,7 +55,7 @@
                     <li class="nav-link-list-item"><a href="#">Help</a></li>
                     <li class="nav-link-list-item">
                         <button class="btn">
-                            <a href="#" class="red">More +</a>
+                            <a href="#" class="red">More <i class="bx bx-plus"></i></a>
                         </button>
                     </li>
                 </ul>
@@ -58,6 +65,30 @@
                 </ul>
             </div>
         </nav>
+        <div class="more-menu hidden">
+            <div class="more-section">
+                <h4>More on Ableton.com:</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Ableton for the Classroom</a></li>
+                    <li><a href="#">Ableton for Colleges and Universities</a></li>
+                    <li><a href="#">Certified Training</a></li>
+                    <li><a href="#">About Ableton</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Apprenticeships</a></li>
+                </ul>
+            </div>
+
+            <div class="more-section">
+                <h4>More from Ableton:</h4>
+                <ul>
+                    <li><a href="#">Loop</a>  —  Watch Talks, Performances and Features</li>
+                    <li><a href="#">Learning Music</a>  —  Learn the fundamentals of music</li>
+                    <li><a href="#">Learning Synths</a> — Get started with synthesis</li>
+                    <li><a href="#">Making Music</a> — Creative strategies for Producers</li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
