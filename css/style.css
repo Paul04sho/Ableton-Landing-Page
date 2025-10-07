@@ -58,6 +58,7 @@ h6 {
     --color-purple: #d5b3ff;
     --color-green: #b6ffc0;
     --color-blue: #0000ff;
+    --color-sky: #b1c5ff;
     --color-dark: #000000;
     --color-light: #ffffff;
 }
@@ -307,6 +308,51 @@ blockquote{
     background: var(--color-green);
 }
 
+
+.gallery-3-container,
+.gallery-3{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 3.5vw;
+    margin-left: 2vw;
+}
+
+.gallery-4{
+    padding-right: 0;
+}
+
+.gallery-4 img{
+    object-fit: cover;
+}
+
+.gallery-4 img:first-child{
+    width: 30vw;
+    height: 24.85vw;
+}
+
+.gallery-4 img:last-child{
+   width: 38vw;
+   height: 38vw;
+}
+
+.gallery-4-right-col{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gallery-4-container{
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+}
+
+.gallery-4-container::before{
+    margin: 0 auto;
+    height: 100%;
+    width: 66.1vw;
+    background: var(--color-purple);
+}
+
 /* --- why ableton video --- */
 .ableton-video{
     width: 750px;
@@ -314,6 +360,7 @@ blockquote{
 
 .ableton-video figcaption{
     padding-left: 1rem;
+    font-weight: 600;
 }
 
 /* ====== MORE MENU ======*/
@@ -354,6 +401,59 @@ blockquote{
 /* hidden by default*/
 .hidden{
     display: none;
+}
+
+/* ====== JOB SECTION ====== */
+.job-notice-container{
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.job-notice{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.jobs-notice-img,
+.jobs-notice-text{
+    height: 41.63vw;
+}
+
+.job-notice .jobs-notice-img{
+    background-image: url(https://ableton-production.imgix.net/about/photo-8.jpg?fit=crop&crop=right);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.jobs-notice-text{
+    background: var(--color-sky);
+    width: 50%;
+    padding: 0 8vw;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.jobs-notice-text a,
+.jobs-notice-text h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.jobs-notice-text h2{
+    margin-bottom: 2rem;
+}
+
+.jobs-notice-text a{
+    color: var(--color-blue);
+}
+
+.jobs-notice-text a .bx-chevron-right{
+    position: relative;
+    top: 0.2rem;
 }
 
 /* ====== MEDIA QUERIES ======*/
