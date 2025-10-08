@@ -22,6 +22,29 @@ function closeMenuOnClickOutside(e) {
     }
 }
 
+const menuToggle = document.getElementById('menuToggle');
+const navContent = document.getElementById('nav-content');
+const arrow = document.getElementById('arrow');
+
+// Toggle mobile menu
+if(menuToggle && navContent && arrow) {
+    menuToggle.addEventListener("click", function (e) {
+        e.stopPropagation;
+        navContent.classList.toggle('show');
+        arrow.classList.toggle('arrow-rotate');
+    });
+
+    document.addEventListener("click", function (e) {
+        if (navContent.classList.contains('show')) {
+            const isClickInside = navContent.contains(e.target) || menuToggle.contains(e.target);
+            if (!isClickInside) {
+                navContent.classList.remove('show');
+                arrow.classList.remove('arrow-rotate');
+            }
+        }
+    });
+}
+
 // Event listeners
 moreBtn.addEventListener("click", toggleMenu);
 document.addEventListener("click", closeMenuOnClickOutside);
