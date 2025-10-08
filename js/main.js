@@ -5,10 +5,15 @@ const menuToggle = document.getElementById('menuToggle');
 const navContent = document.getElementById('nav-content');
 const arrow = document.getElementById('arrow');
 
-// Event listeners
-moreBtn.addEventListener("click", toggleMenu);
-menuToggle.addEventListener("click", toggleMenu);
-// document.addEventListener("click", closeMenuOnClickOutside);
+document.addEventListener("click", function(event) {
+
+    if(event.target === moreBtn || event.target === menuToggle) {
+        toggleMenu(event);
+        return
+    } 
+
+    closeMenuOnClickOutside()
+})
 
 // Toggle function to open the menu
 function toggleMenu(e) {

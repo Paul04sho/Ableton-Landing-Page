@@ -566,11 +566,6 @@ blockquote{
         padding: 0;
     }
 
-    /* hide it on mobile */
-    /* .more-menu{
-        display: none !important;
-    } */
-
     main{
         padding: 0 1rem;
     }
