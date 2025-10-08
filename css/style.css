@@ -459,18 +459,217 @@ blockquote{
 /* ====== MEDIA QUERIES ======*/
 /* --- Responsive More Menu --- */
 @media (max-width: 768px) {
-    .more-menu{
-        flex-direction: column;
-        padding: 1.5rem;
+    header{
+        padding: 1rem 1.5rem;
+        position: relative;
     }
 
-    .more-menu ul li{
+    .navbar{
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .menu-toggle{
+       display: flex;
+       align-items: center;
+       gap: 0.5rem;
+       position: absolute;
+       right: 1.5rem;
+       cursor: pointer;
+       top: 50%;
+       transform: translateY(-50%);
+       transition: color 0.2s ease;
+    }
+
+    .menu-toggle:hover{
+        color: var(--color-orange);
+    }
+
+    .menu-toggle #arrow.arrow-rotate{
+        transform: rotate(180deg);
+    }
+
+    .nav-content{
+        /* absolute positioning to exit the flow*/
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        /* vertical layout */
+        flex-direction: column;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+
+        /* styling dropdown */
+        background: var(--color-light);
+        border-top: 1px solid #e5e5e5;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+        /* animation */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1000;
+    }
+
+    .nav-content .show{
+        max-height: 85vh;
+        opacity: 1;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    /* list items in columns */
+    .primary-nav-list,
+    .secondary-nav-list{
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .primary-nav-list{
+        order: 1;
+    }
+
+    .secondary-nav-list{
+        order: 2;
+        border-top: 2px solid #e5e5e5;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .nav-link-list-item{
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-link-list-item a{
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.05rem;
+        border-bottom: 1px solid #f5f5f5;
+        transition: all 0.2s;
+    }
+
+    .nav-link-list-item a:hover{
+        color: var(--color-orange);
+        background-color: #f8f8f8;
+    }
+
+     /* More Button (in the menu) */
+    .nav-link-list-item .btn{
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    /* hide it on mobile */
+    .more-menu{
+        display: none !important;
+    }
+
+    main{
+        padding: 0 1rem;
+    }
+
+    .external-links{
+        margin: 1rem 0;
+    }
+
+    .hero-content,
+    blockquote{
+        font-size: 1.1rem;
+    }
+
+    .image-container{
+        min-height: 60vh;
+    }
+
+    /* Responsive images */
+    .img-gallery{
+        /*border: 3px solid blue;*/
+        padding-left: 4.3vw;
+    }
+
+    .gallery-1-container,
+    .gallery-2-container,
+    .gallery-4-container{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .gallery-1 > div:last-child{
+        width: 33vw;
+    }
+
+    .gallery-2 .left-col{
+        gap: 3rem;
+    }
+
+    .gallery-2-container::before{
+        width: 58vw;
+    }
+
+    .gallery-2-container{
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+    }
+
+    .gallery-3{
+        /*background-color: red;*/
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery-3-container{
+        /*background-color: yellow;*/
+        padding: 0;
+    }
+
+    .gallery-4{
+        padding-right: 0;
+    }
+
+    .video-container{
+        justify-content: start;
+    }
+
+    .ableton-video{
+        width: 100%;
+    }
+
+    /* Jobs section */
+    .job-notice-container{
+        margin: 1rem;
+    }
+
+    .job-notice{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-notice .jobs-notice-img,
+    .jobs-notice-text{
+        width: 100%;
+        height: 300px;
+    }
+
+    .jobs-notice-text{
+        padding: 2rem 1.25rem;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .about-content h2{
+        font-size: 1.3rem;
+    }
+
+    .about-content p{
         font-size: 1rem;
     }
-
-    .more-menu h4{
-        font-size: 1.1rem;
-        margin-top: 1.5rem;
-    }
-
 }
