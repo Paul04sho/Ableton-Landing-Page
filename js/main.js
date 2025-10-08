@@ -1,6 +1,9 @@
 // Select elements
 const moreBtn = document.querySelector('.btn a');
 const moreMenu = document.querySelector('.more-menu');
+const menuToggle = document.getElementById('menuToggle');
+const navContent = document.getElementById('nav-content');
+const arrow = document.getElementById('arrow');
 
 // Toggle function to open the menu
 function toggleMenu(e) {
@@ -21,10 +24,6 @@ function closeMenuOnClickOutside(e) {
         }
     }
 }
-
-const menuToggle = document.getElementById('menuToggle');
-const navContent = document.getElementById('nav-content');
-const arrow = document.getElementById('arrow');
 
 // Toggle mobile menu
 if(menuToggle && navContent && arrow) {
