@@ -5,6 +5,10 @@ const menuToggle = document.getElementById('menuToggle');
 const navContent = document.getElementById('nav-content');
 const arrow = document.getElementById('arrow');
 
+// Event listeners
+moreBtn.addEventListener("click", toggleMenu);
+document.addEventListener("click", closeMenuOnClickOutside);
+
 // Toggle function to open the menu
 function toggleMenu(e) {
     e.preventDefault();
@@ -43,9 +47,3 @@ if(menuToggle && navContent && arrow) {
         }
     });
 }
-
-// Event listeners
-moreBtn.addEventListener("click", toggleMenu);
-document.addEventListener("click", closeMenuOnClickOutside);
-
-
