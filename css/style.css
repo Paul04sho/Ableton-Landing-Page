@@ -567,9 +567,9 @@ blockquote{
     }
 
     /* hide it on mobile */
-    .more-menu{
+    /* .more-menu{
         display: none !important;
-    }
+    } */
 
     main{
         padding: 0 1rem;

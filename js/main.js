@@ -7,7 +7,8 @@ const arrow = document.getElementById('arrow');
 
 // Event listeners
 moreBtn.addEventListener("click", toggleMenu);
-document.addEventListener("click", closeMenuOnClickOutside);
+menuToggle.addEventListener("click", toggleMenu);
+// document.addEventListener("click", closeMenuOnClickOutside);
 
 // Toggle function to open the menu
 function toggleMenu(e) {
