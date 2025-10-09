@@ -1,19 +1,6 @@
 // Select elements
 const moreBtn = document.querySelector('.btn a');
 const moreMenu = document.querySelector('.more-menu');
-const menuToggle = document.getElementById('menuToggle');
-const navContent = document.getElementById('nav-content');
-const arrow = document.getElementById('arrow');
-
-document.addEventListener("click", function(event) {
-
-    if(event.target === moreBtn || event.target === menuToggle) {
-        toggleMenu(event);
-        return
-    } 
-
-    closeMenuOnClickOutside()
-})
 
 // Toggle function to open the menu
 function toggleMenu(e) {
@@ -35,6 +22,10 @@ function closeMenuOnClickOutside(e) {
     }
 }
 
+const menuToggle = document.getElementById('menuToggle');
+const navContent = document.getElementById('nav-content');
+const arrow = document.getElementById('arrow');
+
 // Toggle mobile menu
 if(menuToggle && navContent && arrow) {
     menuToggle.addEventListener("click", function (e) {
@@ -53,3 +44,9 @@ if(menuToggle && navContent && arrow) {
         }
     });
 }
+
+// Event listeners
+moreBtn.addEventListener("click", toggleMenu);
+document.addEventListener("click", closeMenuOnClickOutside);
+
+
