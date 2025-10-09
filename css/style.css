@@ -139,6 +139,10 @@ header{
     font-size: 1.1rem;
 }
 
+.bx-chevron-down{
+    margin-top: 0.3rem;
+}
+
 /* ====== HERO SECTION ====== */
 main{
     max-width: 1400px;
@@ -457,8 +461,8 @@ blockquote{
 }
 
 /* ====== MEDIA QUERIES ======*/
-/* --- Responsive More Menu --- */
-@media (max-width: 768px) {
+/* --- For mobile phones --- */
+@media(max-width: 768px) {
     header{
         padding: 1rem 1.5rem;
         position: relative;
@@ -668,4 +672,6 @@ blockquote{
         font-size: 1rem;
     }
 }
+
+
 
