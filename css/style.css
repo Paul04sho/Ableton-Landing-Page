@@ -470,15 +470,10 @@ blockquote{
     }
 
     .menu-toggle{
-       display: flex;
-       align-items: center;
-       gap: 0.5rem;
+       display: block;
        position: absolute;
-       right: 1.5rem;
+       margin-left: 5rem;
        cursor: pointer;
-       top: 50%;
-       transform: translateY(-50%);
-       transition: color 0.2s ease;
     }
 
     .menu-toggle:hover{
@@ -515,7 +510,12 @@ blockquote{
         z-index: 1000;
     }
 
-    .nav-content .show{
+    /* Until I found a better alternative */
+    .more-menu{
+       display: none;
+    }
+
+    .nav-content.show{
         max-height: 85vh;
         opacity: 1;
         visibility: visible;
@@ -668,3 +668,4 @@ blockquote{
         font-size: 1rem;
     }
 }
+
