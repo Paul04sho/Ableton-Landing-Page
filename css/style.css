@@ -514,10 +514,8 @@ blockquote{
         z-index: 1000;
     }
 
-    /* Until I found a better alternative */
-    .more-menu{
-       display: none;
-    }
+    
+
 
     .nav-content.show{
         max-height: 85vh;
@@ -672,6 +670,7 @@ blockquote{
         font-size: 1rem;
     }
 }
+
 
 
 
