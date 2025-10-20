@@ -14,15 +14,6 @@
 }
 
 
-body{
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Jost", sans-serif;
-    color: var(--clr-pure-black);
-    background-color: #f3f3f3;
-}
-
-
 img,
 picture,
 video,
@@ -51,626 +42,270 @@ h6 {
   line-height: 1.5;
 }
 
-
 :root{
-    --color-yellow: #fbffa7;
-    --color-orange: #ff764d;
-    --color-purple: #d5b3ff;
-    --color-green: #b6ffc0;
-    --color-blue: #0000ff;
-    --color-sky: #b1c5ff;
-    --color-dark: #000000;
-    --color-light: #ffffff;
+  --color-yellow: #fbffa7;
+  --color-orange: #ff764d;
+  --color-purple: #d5b3ff;
+  --color-green: #b6ffc0;
+  --color-blue: #0000ff;
+  --color-sky: #b1c5ff;
+  --color-dark: #000000;
+  --color-light: #ffffff;
 }
 
-
-/* ====== HEADER ====== */
-
-header{
-    /*border: 2px solid red;*/
-    padding: 1.25rem 1.5rem;
-    border-bottom: 2px solid #e5e5e5;
-}
-
-.navbar{
-    /*border: 3px solid yellow;*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo-container{
-    margin-right: 2rem;
-}
-
-.logo-container svg{
-    width: 60px;
-    height: 24px;
-}
-
-.nav-content{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: space-between;
-}
-
-.primary-nav-list, 
-.secondary-nav-list{
-    display: flex;
-    align-items: center;
-    gap: 1.75rem;
-    list-style: none;
-}
-
-.nav-link-list-item a{
-    text-decoration: none;
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Jost", sans-serif;
     color: var(--color-dark);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.2s;
+    background-color: #f3f3f3;
 }
 
-.nav-link-list-item a:hover{
-    color: var(--color-orange);
+nav,
+.container,
+.main-content,
+footer{
+  background: var(--color-light);  
 }
 
-.red{
-    color: var(--color-orange);
+.main-content{
+  padding-bottom: 8rem;
 }
 
-.secondary-nav-list .live a{
-    color: var(--color-blue);
+/* --- PRIMARY NAV --- */
+.primary-nav{
+  position: relative;
+  padding: 1.4rem 2rem;
 }
 
-.btn{
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+.secondary-nav{
+  padding: 1.05rem 2rem;
 }
 
+
+.primary-nav{
+  border-bottom: 2px solid #e5e5e5;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.secondary-nav{
+  transition: all 0.5s ease;
+}
+
+.main-site-logo{
+  position: absolute;
+  left: auto;
+  top: auto;
+  display: block;
+  width: 3.75em;
+  height: 1.75em;
+}
+
+.primary-nav-left{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* hidden on desktop */
 .menu-toggle{
-    display: none; /* show it on smaller screens */
-    background: none;
-    font-weight: 500;
-    font-size: 1.1rem;
+  display: none;
+  background: none;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
-.bx-chevron-down{
-    margin-top: 0.3rem;
+.nav-link-list{
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
 }
 
-/* ====== HERO SECTION ====== */
-main{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+.main-link-list{
+  padding-left: 5.5rem;
 }
 
-.external-links{
-    display: flex;
-    gap: 2rem;
-    margin: 2rem 0 0 0;
+.nav-link-list .try-live{
+  margin-left: auto;
+  margin-right: 0;
 }
 
-.external-links a{
-    text-decoration: none;
-    color: var(--color-dark);
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.2s;
+.nav-link-list-item a,
+.collapsible-toggle-btn{
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.external-links a:first-child{
-    color: var(--color-orange);
+.primary-nav .nav-link-list-item a{
+  font-weight: 600;
 }
 
-.image-container{
-    min-height: 85vh;
-    margin: 2rem 0;
-    background-image: url("https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.nav-link-list-item a.small-text, 
+.small-text{
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.nav-link-list-item.login a{
+  font-size: 0.95rem;
+  /*border: 6px solid lightblue;*/
+}
+
+/* --- blue highlight cta links --- */
+.nav-link-list-item .cta-link,
+.cta-link{
+  color: var(--color-blue);
+}
+
+/* --- color active Links red --- */
+.nav-link-list-item .active{
+  color: var(--color-orange);
+  position: relative;
+}
+
+.secondary-nav .nav-link-list-item a{
+  font-weight: 500;
+  font-size: 0.975rem;
+}
+
+/* --- General Styles for collapsible nav content --- */
+.collapsible-toggle-btn{
+  background: none; /* applied to the More button */
+}
+
+.collapsible-content-container{
+  display: none;
+  margin-top: 3rem;
+}
+
+.open-collapsible{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.collapsible-content-container > div .collapsible-item-links{
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+  overflow-x: auto;
+  min-width: 100%;
+}
+
+.collapsible-content-item h3{
+ font-size: 1.8rem;
+ font-weight: 500;
+}
+
+.collapsible-content-item h4{
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.collapsible-content-container > div .collapsible-item-links .small-text{
+  font-weight: 400;
+  font-size: 1.12rem;
+}
+
+/* --- collapsible toggle icons button --- */
+.bx-plus,
+.bx-minus{
+  font-size: 1.2rem;
+  position: absolute;
+  top: 6px;
+}
+
+/* --- HERO SECTION --- */
+.hero{
+  min-height: calc(100vh - 120px);
+  margin-left: 8.3vw;
+  margin-right: 8.3vw;
+  background-image: url("https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-header{
-    color: var(--color-orange);
-    font-size: clamp(4rem, 12vw, 9rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
+  color: var(--color-orange);
+  font-size: 8.5rem;
+  font-weight: 500;
 }
 
-.hero-section{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-}
-
-.hero-content{
-    font-size: 1.375rem;
-    font-weight: 400;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero-content a{
-    color: var(--color-blue);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.hero-content a:hover{
-    text-decoration: underline;
-}
-
-blockquote{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 1rem auto;
-}
-
-/* ====== IMAGE SECTION  ====== */
 .container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  /*border: 5px solid black;*/
 }
 
-/* --- section paragraphs styles --- */
 .about-content{
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 750px;
+  margin: 3rem 0;
+  /*border: 4px solid rosybrown;*/
 }
 
 .about-content h2{
-    font-size: 1.65rem;
-    font-weight: 500;
+  font-size: 1.65rem;
+  font-weight: 500;
 }
 
 .about-content p{
-    margin: 1.875rem 0;
-    font-size: 1.2rem;
+  margin: 1.875rem 0;
+  font-size: 1.2rem;
 }
 
-/* --- image gallery styles --- */
+/* --- IMAGE GALLERY --- */
 .img-gallery{
-    display: flex;
-    align-items: center;
-    margin-left: 2rem;
-    width: 100%;
-    padding: 6.3vw 1vw 6.3vw 6.3vw;
-    z-index: 2;
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+  width: 100%;
+  padding: 6.3vw 1vw 6.3vw 6.3vw;
+  z-index: 2;
 }
 
 .gallery-1 > div:first-child{
-    background-image: url(https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 41vw;
-    height: 41vw;
-    max-width: 650px;
-    max-height: 650px;
+  background-image: url(https://maryamsfrontendpractice.netlify.app/1.ableton/images/work.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 41vw;
+  height: 41vw;
+  max-width: 650px;
+  max-height: 650px;
 }
 
 .gallery-1 > div:last-child{
-    background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 34vw;
-    height: 26vw;
-    margin-left: 8.3vw;
-}
-
-.gallery-2 .left-col{
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-}
-
-.gallery-2-right-img{
-    width: 41vw;
-    margin-left: 8.3vw;
-}
-
-.gallery-2 .left-col img{
-    width: 33.3vw;
-    height: 25vw;
-    object-fit: cover;
+  background-image: url(https://maryamsfrontendpractice.netlify.app/1.ableton/images/walk.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 34vw;
+  height: 26vw;
+  margin-left: 8.3vw;
 }
 
 .gallery-container::before{
-    /*border: 2px solid red;*/
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 58%;
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 58%;
+  /*border: 8px solid;*/
 }
 
 .gallery-1-container::before{
-    right: 0;
-    background: var(--color-yellow);
+  right: 0;
+  background: var(--color-yellow);
 }
-
-.gallery-2-container::before{
-    left: 0;
-    background: var(--color-green);
-}
-
-
-.gallery-3-container,
-.gallery-3{
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 3.5vw;
-    margin-left: 2vw;
-}
-
-.gallery-4{
-    padding-right: 0;
-}
-
-.gallery-4 img{
-    object-fit: cover;
-}
-
-.gallery-4 img:first-child{
-    width: 30vw;
-    height: 24.85vw;
-}
-
-.gallery-4 img:last-child{
-   width: 38vw;
-   height: 38vw;
-}
-
-.gallery-4-right-col{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.gallery-4-container{
-    padding-top: 2.5vw;
-    padding-bottom: 2.5vw;
-}
-
-.gallery-4-container::before{
-    margin: 0 auto;
-    height: 100%;
-    width: 66.1vw;
-    background: var(--color-purple);
-}
-
-/* --- why ableton video --- */
-.ableton-video{
-    width: 750px;
-}
-
-.ableton-video figcaption{
-    padding-left: 1rem;
-    font-weight: 600;
-}
-
-/* ====== MORE MENU ======*/
-.more-menu{
-    background: var(--color-light);
-    border-top: 1px solid #e5e5e5;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin-top: 1rem;
-    transition: all 0.3s ease-in-out;
-}
-
-.more-menu h4{
-    margin-bottom: 1rem;
-}
-
-.more-menu ul{
-    padding: 0;
-}
-
-.more-menu li{
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-.more-menu a{
-    color: var(--color-dark);
-}
-
-.more-menu a:hover{
-    color: var(--color-orange);
-}
-
-/* hidden by default*/
-.hidden{
-    display: none;
-}
-
-/* ====== JOB SECTION ====== */
-.job-notice-container{
-    margin-left: 8vw;
-    margin-right: 8vw;
-}
-
-.job-notice{
-    display: flex;
-    position: relative;
-    width: 100%;
-}
-
-.jobs-notice-img,
-.jobs-notice-text{
-    height: 41.63vw;
-}
-
-.job-notice .jobs-notice-img{
-    background-image: url(https://ableton-production.imgix.net/about/photo-8.jpg?fit=crop&crop=right);
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-
-.jobs-notice-text{
-    background: var(--color-sky);
-    width: 50%;
-    padding: 0 8vw;
-    margin: auto 0;
-    display: flex;
-    align-items: center;
-}
-
-.jobs-notice-text a,
-.jobs-notice-text h2{
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.jobs-notice-text h2{
-    margin-bottom: 2rem;
-}
-
-.jobs-notice-text a{
-    color: var(--color-blue);
-}
-
-.jobs-notice-text a .bx-chevron-right{
-    position: relative;
-    top: 0.2rem;
-}
-
-/* ====== MEDIA QUERIES ======*/
-/* --- For mobile phones --- */
-@media(max-width: 768px) {
-    header{
-        padding: 1rem 1.5rem;
-        position: relative;
-    }
-
-    .navbar{
-        flex-wrap: wrap;
-        position: relative;
-    }
-
-    .menu-toggle{
-       display: block;
-       position: absolute;
-       margin-left: 5rem;
-       cursor: pointer;
-    }
-
-    .menu-toggle:hover{
-        color: var(--color-orange);
-    }
-
-    .menu-toggle #arrow.arrow-rotate{
-        transform: rotate(180deg);
-    }
-
-    .nav-content{
-        /* absolute positioning to exit the flow*/
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-
-        /* vertical layout */
-        flex-direction: column;
-        align-items: stretch !important;
-        justify-content: flex-start !important;
-
-        /* styling dropdown */
-        background: var(--color-light);
-        border-top: 1px solid #e5e5e5;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-
-        /* animation */
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 1000;
-    }
-
-    
-
-
-    .nav-content.show{
-        max-height: 85vh;
-        opacity: 1;
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    /* list items in columns */
-    .primary-nav-list,
-    .secondary-nav-list{
-        flex-direction: column;
-        gap: 0;
-        width: 100%;
-    }
-
-    .primary-nav-list{
-        order: 1;
-    }
-
-    .secondary-nav-list{
-        order: 2;
-        border-top: 2px solid #e5e5e5;
-        margin-top: 0.5rem;
-        padding: 0.5rem;
-    }
-
-    .nav-link-list-item{
-        margin: 0;
-        width: 100%;
-    }
-
-    .nav-link-list-item a{
-        display: block;
-        padding: 1rem 1.5rem;
-        font-size: 1.05rem;
-        border-bottom: 1px solid #f5f5f5;
-        transition: all 0.2s;
-    }
-
-    .nav-link-list-item a:hover{
-        color: var(--color-orange);
-        background-color: #f8f8f8;
-    }
-
-     /* More Button (in the menu) */
-    .nav-link-list-item .btn{
-        width: 100%;
-        justify-content: flex-start;
-        padding: 0;
-    }
-
-    main{
-        padding: 0 1rem;
-    }
-
-    .external-links{
-        margin: 1rem 0;
-    }
-
-    .hero-content,
-    blockquote{
-        font-size: 1.1rem;
-    }
-
-    .image-container{
-        min-height: 60vh;
-    }
-
-    /* Responsive images */
-    .img-gallery{
-        /*border: 3px solid blue;*/
-        padding-left: 4.3vw;
-    }
-
-    .gallery-1-container,
-    .gallery-2-container,
-    .gallery-4-container{
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .gallery-1 > div:last-child{
-        width: 33vw;
-    }
-
-    .gallery-2 .left-col{
-        gap: 3rem;
-    }
-
-    .gallery-2-container::before{
-        width: 58vw;
-    }
-
-    .gallery-2-container{
-        padding-top: 2.5vw;
-        padding-bottom: 2.5vw;
-    }
-
-    .gallery-3{
-        /*background-color: red;*/
-        margin: 0;
-        padding: 0;
-    }
-
-    .gallery-3-container{
-        /*background-color: yellow;*/
-        padding: 0;
-    }
-
-    .gallery-4{
-        padding-right: 0;
-    }
-
-    .video-container{
-        justify-content: start;
-    }
-
-    .ableton-video{
-        width: 100%;
-    }
-
-    /* Jobs section */
-    .job-notice-container{
-        margin: 1rem;
-    }
-
-    .job-notice{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .job-notice .jobs-notice-img,
-    .jobs-notice-text{
-        width: 100%;
-        height: 300px;
-    }
-
-    .jobs-notice-text{
-        padding: 2rem 1.25rem;
-    }
-
-    .about-content{
-        width: 100%;
-    }
-
-    .about-content h2{
-        font-size: 1.3rem;
-    }
-
-    .about-content p{
-        font-size: 1rem;
-    }
-}
-
-
 
 
