@@ -161,6 +161,10 @@ footer{
   color: var(--color-blue);
 }
 
+.about-content .cta-link:hover{
+  text-decoration: underline;
+}
+
 /* --- color active Links red --- */
 .nav-link-list-item .active{
   color: var(--color-orange);
@@ -247,6 +251,7 @@ footer{
   /*border: 5px solid black;*/
 }
 
+/* --- section paragraphs styles --- */
 .about-content{
   max-width: 750px;
   margin: 3rem 0;
@@ -254,7 +259,7 @@ footer{
 }
 
 .about-content h2{
-  font-size: 1.65rem;
+  font-size: 1.67rem;
   font-weight: 500;
 }
 
@@ -306,6 +311,39 @@ footer{
 .gallery-1-container::before{
   right: 0;
   background: var(--color-yellow);
+}
+
+.gallery-2 .left-col{
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.gallery-2 .left-col img{
+  width: 33vw;
+  height: 24vw;
+  object-fit: cover;
+}
+
+
+.gallery-2-right-img{
+  width: 41vw;
+  margin-left: 8.3vw;
+}
+
+.gallery-2-container::before{
+  left: 0;
+  background: var(--color-green);
+}
+
+
+/* --- ABLETON VIDEO --- */
+.ableton-video{
+  width: 750px;
+}
+
+figcaption{
+  padding-left: 1rem;
 }
 
 
