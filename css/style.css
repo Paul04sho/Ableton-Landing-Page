@@ -264,7 +264,7 @@ footer{
 }
 
 .about-content p{
-  margin: 1.875rem 0;
+  margin: 1.5rem 0;
   font-size: 1.2rem;
 }
 
@@ -336,6 +336,49 @@ footer{
   background: var(--color-green);
 }
 
+.gallery-3-container,
+.gallery-3{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2.5vw;
+  margin-right: 2vw;
+}
+
+.gallery-4-container{
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
+.gallery-4-container::before{
+  margin: 0 auto;
+  width: 66vw;
+  height: 58vw;
+  background: var(--color-purple);
+}
+
+.gallery-4{
+  padding-right: 0;
+}
+
+.gallery-4 img{
+  object-fit: cover;
+}
+
+.gallery-4 img:first-child{
+  width: 33vw;
+  height: 22vw;
+}
+
+.gallery-4-right-col{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gallery-4 img:last-child{
+  width: 40vw;
+  height: 40vw;
+}
 
 /* --- ABLETON VIDEO --- */
 .ableton-video{
@@ -344,6 +387,56 @@ footer{
 
 figcaption{
   padding-left: 1rem;
+}
+
+/* --- JOB SECTION --- */
+.job-notice-container{
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-bottom: 0;
+}
+
+.job-notice{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.job-notice .job-notice-img{
+  background-image: url(https://maryamsfrontendpractice.netlify.app/1.ableton/images/talk.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.job-notice-img,
+.job-notice-text{
+  height: 41.63vw;
+}
+
+.job-notice-text{
+  width: 50%;
+  margin: auto 0;
+  background: var(--color-sky);
+  padding: 0 8vw;
+  display: flex;
+  align-items: center;
+}
+
+.job-notice-text h2,
+.job-notice-text a{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.job-notice-text h2{
+  margin-bottom: 2rem;
+}
+
+.job-notice-text a .bx-chevron-right{
+  position: relative;
+  top: 0.2rem;
 }
 
 
