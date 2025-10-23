@@ -448,14 +448,11 @@ footer{
   border-top: 2px solid #e5e5e5;
 }
 
-<<<<<<< HEAD
-=======
 /* --- FOOTER SECTION ---*/
 footer{
   border-top: 2px solid #e5e5e5;
 }
 
->>>>>>> added-footer-and-content
 .footer-wrapper{
   padding: 7vw 0;
   margin-left: 8vw;
@@ -464,9 +461,6 @@ footer{
 
 .footer-logo{
   font-size: 4rem;
-<<<<<<< HEAD
-  margin-bottom: 2rem;
-=======
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -478,7 +472,6 @@ footer a{
 footer h4,
 .footer-legals-links a,
 .made-in-berlin p{
->>>>>>> added-footer-and-content
   font-weight: 500;
 }
 
@@ -489,8 +482,6 @@ footer h4,
   margin-bottom: 5rem;
 }
 
-<<<<<<< HEAD
-=======
 .footer-link-list{
   display: flex;
   flex-direction: column;
@@ -536,7 +527,6 @@ footer p{
 }
 
 
->>>>>>> added-footer-and-content
 /* footer social media icons styles */
 .social-media-icon{
  margin-top: 1rem;
@@ -572,20 +562,11 @@ footer p{
   background: var(--clr-insta-orange);
 }
 
-<<<<<<< HEAD
-.contact-section p{
-  margin-bottom: 2rem;
-}
-
-=======
->>>>>>> added-footer-and-content
 /* newsletter form */
 form{
   display: flex;
 }
 
-<<<<<<< HEAD
-=======
 .footer-form p{
   margin-bottom: 1.5rem;
 }
@@ -595,7 +576,6 @@ form .submit-btn{
   padding: 0.4rem;
 }
 
->>>>>>> added-footer-and-content
 form input{
   background: #eeeeee;
   flex: 1;
@@ -611,12 +591,6 @@ form .submit-btn{
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.footer-link-list .bx-chevron-right{
-  position: relative;
-  top: 0.15rem;
-}
-=======
 /* language option */
 .options-container{
   display: flex;
@@ -681,4 +655,3 @@ option {
     flex-direction: row-reverse;
 }
 }
->>>>>>> added-footer-and-content
