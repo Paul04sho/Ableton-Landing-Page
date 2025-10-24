@@ -448,11 +448,6 @@ footer{
   border-top: 2px solid #e5e5e5;
 }
 
-/* --- FOOTER SECTION ---*/
-footer{
-  border-top: 2px solid #e5e5e5;
-}
-
 .footer-wrapper{
   padding: 7vw 0;
   margin-left: 8vw;
@@ -461,6 +456,7 @@ footer{
 
 .footer-logo{
   font-size: 4rem;
+  margin-bottom: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -526,7 +522,6 @@ footer p{
   width: 100%;
 }
 
-
 /* footer social media icons styles */
 .social-media-icon{
  margin-top: 1rem;
@@ -589,6 +584,11 @@ form .submit-btn{
   padding-left: 2rem;
   padding-right: 2rem;
   cursor: pointer;
+}
+  
+.footer-link-list .bx-chevron-right{
+  position: relative;
+  top: 0.15rem;
 }
 
 /* language option */
