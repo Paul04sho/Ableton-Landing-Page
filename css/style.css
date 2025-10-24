@@ -621,7 +621,382 @@ option {
   color: var(--clr-pure-white);
 }
 
+/* --- MEDIA QUERIES | for responsiveness --- */
+@media screen and (min-width: 1609px) {
+  .main,
+  nav,
+  footer {
+    width: 83%;
+    margin: 0 auto;
+  }
+
+  .primary-nav,
+  .secondary-nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .about-content {
+    max-width: 800px;
+    margin: 3rem 0;
+  }
+
+  .about-content p {
+    font-size: 1.15rem;
+  }
+
+  .img-gallery {
+    padding: 3.5vw 4.33vw 3.5vw 3.5vw;
+  }
+
+  .gallery-3-container,
+  .gallery-3 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+   .gallery-1 > div:first-child {
+    margin-left: 3.5vw;
+  } 
+
+  .gallery-1 > div:last-child {
+    max-width: 27.3vw;
+    max-height: 20.5vw;
+  }
+
+  .gallery-2 img:last-child {
+    width: 35vw;
+  }
+
+  .gallery-2 .left-col img {
+    width: 28vw;
+    height: 21vw;
+  }
+
+  .gallery-4 img:first-child {
+    height: 21vw;
+    width: 27.7vw;
+  }
+
+  .gallery-4 img:last-child {
+    width: 33.7vw;
+    height: 33.7vw;
+  }
+
+  .gallery-4-container,
+  .gallery-4 {
+    padding-right: 0;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .gallery-4-right-col {
+    width: 100%;
+  }
+
+  .gallery-4-container::before {
+    width: 60vw;
+  }
+
+  .job-notice-container {
+    padding: 0;
+  }
+
+  .jobs-notice-img,
+  .jobs-notice-text {
+    height: 34.3vw;
+  }
+
+   .secondary-nav .nav-link-list-item a{
+    font-weight: 500;
+    font-size: 0.875rem;
+  } 
+}
+
+@media screen and (max-width: 1279px) {
+  .nav-link-list-item a,
+  .collapsible-toggle-btn,
+  .bx-plus,
+  .bx-minus {
+    font-size: 1rem;
+  }
+
+  .bx-plus,
+  .bx-minus {
+    top: 4px;
+  }
+
+  .collapsible-content-item h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .collapsible-content-item h4 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .collapsible-content-container > div .collapsible-item-links .small-text {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+
+  .nav-link-list-item.try-live a,
+  .nav-link-list-item.login a {
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+}
+
+
+/* --- media queries for tablet --- */
 @media screen and (max-width: 1024px) {
+  .primary-nav {
+    padding: 1.05rem 1.2rem;
+  }
+
+  .secondary-nav {
+    width: 100%;
+  }
+
+  .main-site-logo {
+    display: inline-block;
+    position: relative;
+    z-index: 15;
+  }
+
+  .white-logo path {
+    stroke: #eee;
+  }
+
+  .menu-toggle {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+    color: var(--clr-pure-black);
+    cursor: pointer;
+  }
+
+  /* --- make toggle button color white when menu is visible --- */
+  .white-menu-toggle {
+    color: white;
+  }
+
+  .bx-caret-down,
+  .bx-caret-up {
+    font-size: 1rem;
+    margin-left: 0.3rem;
+  }
+
+  /* --- main mobile and tablet nav hidden by default --- */
+  .main-nav-content {
+    background: var(--clr-blue);
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    padding-left: 1.01rem;
+    transition: all 0.3s ease;
+  }
+
+  .visible-nav {
+    display: block;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  .main-link-list {
+    margin: 0 0 2rem 0;
+    padding-left: 0;
+    padding-top: 4.5rem;
+  }
+
+  .primary-nav-link-list {
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    z-index: 10;
+    align-items: flex-start;
+    gap: 1.3rem;
+  }
+
+  /* --- Change link color to white for all elements --- */
+  .primary-nav .nav-link-list-item a,
+  .nav-link-list-item.try-live a {
+    color: var(--clr-pure-white);
+    font-size: 1.2rem;
+  }
+
+  .primary-nav p,
+  .primary-nav h3,
+  .primary-nav h4 {
+    color: var(--clr-pure-white);
+  }
+
+  .nav-link-list .try-live {
+    margin-left: 0;
+  }
+
+  .nav-link-list-item.try-live a.small-text {
+    color: var(--clr-pure-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .nav-link-list-item a.small-text,
+  .small-text {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  /* --- collapsible content styles --- */
+
+  /* --- Hide the collapsible toggle --- */
+  .collapsible-toggle {
+    display: none;
+  }
+
+  .collapsible-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .collapsible-content-container,
+  .collapsible-content-item {
+    overflow: hidden;
+  }
+
+  .collapsible-content-item h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .collapsible-item-links h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-weight: 400;
+  }
+
+  .collapsible-content-container > div:first-child .collapsible-item-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .collapsible-content-container
+    > div:last-child
+    .collapsible-item-links
+    .small-text {
+    font-weight: 300;
+  }
+
+  .collapsible-content-container > div:last-child .collapsible-item-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    overflow-x: auto;
+    min-width: 100%;
+  }
+
+  .collapsible-item-links::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .collapsible-item-links::-webkit-scrollbar-thumb {
+    background: #00000070;
+  }
+
+  /* --- make flex items scrollable --- */
+  .collapsible-content-container > div:last-child .collapsible-item-links li p {
+    min-width: 13.5rem;
+  }
+
+  .primary-nav .nav-link-list-item .active {
+    color: var(--clr-red);
+    position: relative;
+  }
+
+  .about-content {
+    width: 63vw;
+  }
+
+  .about-content h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .about-content p {
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .gallery-1 > div:last-child {
+    width: 37vw;
+  }
+
+  .gallery-4 img:first-child {
+    width: 33vw;
+    height: 24.85vw;
+  }
+
+  .gallery-4 img:last-child {
+    width: 37vw;
+    height: 40vw;
+  }
+
+  .gallery-4-container::before {
+    width: 67.6vw;
+    margin-left: 3.1vw;
+  }
+
+  .job-notice {
+    flex-direction: column;
+  }
+
+  .job-notice .jobs-notice-img,
+  .jobs-notice-text {
+    width: 100%;
+  }
+
+  .job-notice .jobs-notice-img {
+    height: 50vw;
+  }
+
+  .jobs-notice-text {
+    height: fit-content;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .jobs-notice-text a,
+  .jobs-notice-text h2 {
+    font-size: 1.2rem;
+  }
+
+  /* --- why ableton video --- */
+  .ableton-video {
+    width: 63vw;
+  }
+
+  .ableton-video iframe {
+    width: 100%;
+    aspect-ratio: 2/1.2;
+    height: auto;
+  }
+
+  .video-container {
+    justify-content: center;
+    align-items: center;
+  }
+
   .main-footer-row-top,
   .main-footer-row-bottom {
     grid-template-columns: 1fr;
@@ -653,5 +1028,84 @@ option {
   .made-in-berlin {
     margin-top: 5rem;
     flex-direction: row-reverse;
+  }
 }
+
+/* media queries for mobile */
+@media screen and (max-width: 768px) {
+  .hero-header {
+    font-size: 4rem;
+  }
+
+  .container {
+    margin-left: 8.3vw;
+    margin-right: 8.3vw;
+  }
+
+  .img-gallery {
+    padding-left: 4.3vw;
+  }
+
+  .gallery-1-container,
+  .gallery-4-container,
+  .gallery-2-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .gallery-1 > div:last-child {
+    width: 33vw;
+  }
+
+  .gallery-2 .left-col {
+    gap: 3rem;
+  }
+
+  .gallery-2-container::before {
+    width: 58vw;
+  }
+
+  .gallery-2-container {
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .gallery-3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-3-container {
+    padding: 0;
+  }
+
+  .gallery-4 {
+    padding-right: 0;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .video-container {
+    justify-content: start;
+  }
+
+  .ableton-video {
+    width: 100%;
+  }
+
+  form input,
+  form .submit-btn {
+    padding: 0.2rem;
+  }
+
+  form .submit-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  form input {
+    padding-left: 0.75rem;
+  }
 }
