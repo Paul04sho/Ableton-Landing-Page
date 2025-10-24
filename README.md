@@ -23,11 +23,12 @@ Ableton-Landing-Page/
 └── README.md
 
 
-## Fonctionnalités ajoutées (ou en cours d'ajout)
+## Fonctionnalités ajoutées
 
 - Design responsive 
 - Boutons interactifs gérés via JavaScript
-- Footer à colonnes multiples 
+- Footer à colonnes multiples
+- Système de traduction
 
 
 ## Installation
