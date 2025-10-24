@@ -121,6 +121,14 @@ footer{
   font-size: 1.1rem;
 }
 
+.menu-toggle i{
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle.rotate i{
+  transform: rotate(180deg);
+}
+
 .nav-link-list{
   display: flex;
   align-items: center;
@@ -401,8 +409,10 @@ figcaption{
 }
 
 .job-notice{
-  display: flex;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -450,15 +460,14 @@ footer{
 
 .footer-wrapper{
   padding: 7vw 0;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-inline: 8vw;
+  max-width: 1600px;
 }
 
 .footer-logo{
   font-size: 4rem;
-  margin-bottom: 2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 footer a{
@@ -469,6 +478,11 @@ footer h4,
 .footer-legals-links a,
 .made-in-berlin p{
   font-weight: 500;
+}
+
+.main-footer{
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer-row-top,
@@ -613,21 +627,22 @@ option {
 }
 
 ::selection {
-  background: var(--clr-blue); /* WebKit/Blink Browsers */
-  color: var(--clr-pure-white);
+  background: var(--color-blue); /* WebKit/Blink Browsers */
+  color: var(--color-light);
 }
 ::-moz-selection {
-  background: var(--clr-blue); /* Gecko Browsers */
-  color: var(--clr-pure-white);
+  background: var(--color-blue); /* Gecko Browsers */
+  color: var(--color-light);
 }
 
 /* --- MEDIA QUERIES | for responsiveness --- */
 @media screen and (min-width: 1609px) {
-  .main,
   nav,
-  footer {
-    width: 83%;
-    margin: 0 auto;
+  footer,
+  .main-content{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .primary-nav,
@@ -706,8 +721,8 @@ option {
     padding: 0;
   }
 
-  .jobs-notice-img,
-  .jobs-notice-text {
+  .job-notice-img,
+  .job-notice-text {
     height: 34.3vw;
   }
 
@@ -777,7 +792,7 @@ option {
     position: relative;
     display: inline-block;
     z-index: 5;
-    color: var(--clr-pure-black);
+    color: var(--color-dark);
     cursor: pointer;
   }
 
@@ -786,15 +801,14 @@ option {
     color: white;
   }
 
-  .bx-caret-down,
-  .bx-caret-up {
+  .bx-caret-down{
     font-size: 1rem;
     margin-left: 0.3rem;
   }
 
   /* --- main mobile and tablet nav hidden by default --- */
   .main-nav-content {
-    background: var(--clr-blue);
+    background: var(--color-blue);
     position: absolute;
     top: 0;
     transform: translateY(-100%);
@@ -829,14 +843,14 @@ option {
   /* --- Change link color to white for all elements --- */
   .primary-nav .nav-link-list-item a,
   .nav-link-list-item.try-live a {
-    color: var(--clr-pure-white);
+    color: var(--color-light);
     font-size: 1.2rem;
   }
 
   .primary-nav p,
   .primary-nav h3,
   .primary-nav h4 {
-    color: var(--clr-pure-white);
+    color: var(--color-light);
   }
 
   .nav-link-list .try-live {
@@ -844,7 +858,7 @@ option {
   }
 
   .nav-link-list-item.try-live a.small-text {
-    color: var(--clr-pure-white);
+    color: var(--color-light);
     font-size: 1.2rem;
     font-weight: 500;
   }
@@ -920,7 +934,7 @@ option {
   }
 
   .primary-nav .nav-link-list-item .active {
-    color: var(--clr-red);
+    color: var(--color-orange);
     position: relative;
   }
 
@@ -958,26 +972,22 @@ option {
   }
 
   .job-notice {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .job-notice .jobs-notice-img,
-  .jobs-notice-text {
-    width: 100%;
-  }
-
-  .job-notice .jobs-notice-img {
+  .job-notice .job-notice-img {
     height: 50vw;
+    background-position: center;
   }
 
-  .jobs-notice-text {
-    height: fit-content;
+  .job-notice-text {
+    height: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
-  .jobs-notice-text a,
-  .jobs-notice-text h2 {
+  .job-notice-text a,
+  .job-notice-text h2 {
     font-size: 1.2rem;
   }
 
@@ -1033,17 +1043,36 @@ option {
 
 /* media queries for mobile */
 @media screen and (max-width: 768px) {
+  .hero{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    min-height: 60vh;
+  }
+
   .hero-header {
     font-size: 4rem;
   }
 
   .container {
-    margin-left: 8.3vw;
-    margin-right: 8.3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content h2{
+    font-size: 1.3rem;
+  }
+
+  .about-content{
+    font-size: 1rem;
   }
 
   .img-gallery {
-    padding-left: 4.3vw;
+    padding-left: 4vw;
+    margin-left: 0;
   }
 
   .gallery-1-container,
@@ -1058,7 +1087,12 @@ option {
   }
 
   .gallery-2 .left-col {
-    gap: 3rem;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .gallery-2-right-img{
+    margin-right: 5.3vw;
   }
 
   .gallery-2-container::before {
@@ -1083,10 +1117,6 @@ option {
     padding-right: 0;
   }
 
-  .about-content {
-    width: 100%;
-  }
-
   .video-container {
     justify-content: start;
   }
@@ -1103,9 +1133,35 @@ option {
   form .submit-btn {
     padding-left: 1rem;
     padding-right: 1rem;
+    white-space: nowrap;
   }
 
   form input {
     padding-left: 0.75rem;
   }
+
+  .job-notice{
+    flex-direction: column;
+  }
+
+  .job-notice .job-notice-img{
+    width: 100%;
+    height: 60vw;
+  }
+
+  .job-notice-text{
+    width: 100%;
+    height: 60vw;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .job-notice-text h2{
+    font-size: 1rem;
+  }
+
+  .job-notice-text{
+    font-size: 0.95rem;
+  }
 }
+

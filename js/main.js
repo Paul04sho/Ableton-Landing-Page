@@ -66,34 +66,46 @@ const translations = {
           "section.4.text": "チームに必要な環境を提供することで、才能を伸ばし、創造的な成果を生み出します。",
           "section.5.title": "私たちは、自分たちの成長にも情熱を注いでいます。",
           "section.5.text": "個人と職業の両方で成長できる環境を作っています。",
+          "section.6.text": "社内研修プログラムと並行して、従業員が新しい知識やスキルを習得することを積極的にサポートし、それらを日常業務に応用するための指導を受けています。さらに、スタッフが主催する開発サロンや音楽サロンは、新しいテクノロジー、制作テクニック、ベスト プラクティスについて話し合う機会となります。",
           "section.7.title": "従業員がここで働くことを楽しめるようにしたいと考えています。",
+          "section.7.text":   "ベルリンで私たちに参加する場合は、引っ越しや事務手続きをお手伝いします。無料のドイツ語または英語のレッスンも提供します。さらに、ドイツで働くということは、あなたとあなたの家族のための包括的な健康保険、および充実した産休・育休が期待できることを意味します。オフィスアワーは柔軟ですが、それがすべての仕事ではありません。年間を通して会社やチームでの外出が数回あるほか、楽しく非公式な小グループのアクティビティも多数開催しています。",
           "section.8.title": "これまでの成果を誇りに思っていますが、まだまだ進化し続けます。"
         },
       
         cn: {
           "hero.title": "Ableton",
-          "section.1.title": "我们开发 Live、Push 和 Link —— 为音乐创作和表演提供独特的软件和硬件。",
-          "section.1.text": "Ableton 成立于 1999 年，并于 2001 年发布了第一个版本的 Live。全球的音乐人都在使用我们的产品。",
-          "section.2.title": "创作音乐并不容易，需要时间、努力和学习。但当你进入状态时，那种感觉非常美妙。",
-          "section.2.text": "我们对 Ableton 产品的制作也有同样的热情。驱动我们的，是对音乐的热爱和对用户的关怀。",
-          "section.3.title": "我们由来自 30 个国家的 350 多人组成，总部位于柏林，并在洛杉矶和东京设有办公室。",
-          "section.3.text": "我们大多数人都是活跃的音乐人、制作人或 DJ，每天使用 Live 和 Push。",
-          "section.4.title": "我们相信，创造出色的乐器需要专注。我们只专注于少数产品，并不断改进它们。",
+          "section.1.title": "我们开发了 Live、Push 和 Link —— 用于音乐创作和演出的独特软件和硬件。",
+          "section.1.text": "Ableton 成立于 1999 年，并于 2001 年发布了第一个 Live 版本。我们的产品被世界各地的音乐人使用。",
+          "section.2.title": "创作音乐并不容易，这需要时间、努力和学习。但当灵感涌现时，那是一种无与伦比的体验。",
+          "section.2.text": "我们对制作 Ableton 产品也怀有同样的热情。推动我们的，是对音乐的热爱以及对使用者的关注。",
+          "section.3.title": "我们是一支由来自 30 多个国家的 350 多人组成的团队，总部位于柏林，并在洛杉矶和东京设有办公室。",
+          "section.3.text": "我们中的大多数都是活跃的音乐家、制作人或 DJ，每天都在使用 Live 和 Push。我们的团队多元而开放，拥有不同的文化和专业背景。我们相信，每个人都能为塑造音乐文化的未来贡献力量。",
+          "section.4.title": "我们相信，创造真正出色的乐器需要专注。我们专注于少数几个产品，并努力做到极致。",
+          "section.4.text": "我们为团队提供所需的一切，让他们能够发挥创造力并不断成长。我们发现，多元化的团队能带来最好的成果，因为他们能从更广泛的角度解决问题。",
           "section.5.title": "我们热爱自己的工作，也热衷于不断提升自己。",
-          "section.7.title": "我们希望员工在这里感到幸福。我们会尽一切努力让您轻松过渡。"
+          "section.5.text": "我们致力于营造一个让人们能够在个人和职业上共同成长的环境。",
+          "section.6.text": "除了内部培训计划外，我们还积极支持员工获取新知识和技能，并将其应用到日常工作中。同时，员工自发组织的技术与音乐沙龙也是讨论新技术、制作技巧和最佳实践的好机会。",
+          "section.7.title": "我们希望员工能在这里感到幸福和充实。我们会尽一切努力让您的过渡过程顺利。",
+          "section.7.text": "如果您加入我们的柏林团队，我们将协助您处理搬迁和文件事务，并提供免费的德语或英语课程。此外，在德国工作意味着您和您的家人将享有全面的医疗保险以及充足的产假与陪产假。办公时间灵活，我们也经常举办团队活动与非正式聚会。",
+          "section.8.title": "我们为迄今取得的成就感到自豪，但未来还有更多值得期待的事。加入我们，共同创造音乐的未来。"
         },
       
         es: {
           "hero.title": "Ableton",
-          "section.1.title": "Creamos Live, Push y Link — software y hardware únicos para la creación y la interpretación musical.",
+          "section.1.title": "Creamos Live, Push y Link — software y hardware únicos para la creación y el rendimiento musical.",
           "section.1.text": "Ableton fue fundada en 1999 y lanzó la primera versión de Live en 2001. Nuestros productos son utilizados por músicos de todo el mundo.",
-          "section.2.title": "Hacer música no es fácil. Requiere tiempo, esfuerzo y aprendizaje. Pero cuando fluye, es increíblemente gratificante.",
-          "section.2.text": "Sentimos lo mismo cuando creamos los productos de Ableton. Nuestra pasión por lo que hacemos y por las personas para quienes lo hacemos es lo que nos impulsa.",
+          "section.2.title": "Hacer música no es fácil. Requiere tiempo, esfuerzo y aprendizaje. Pero cuando fluyes, la experiencia es increíble.",
+          "section.2.text": "Sentimos lo mismo al crear los productos de Ableton. Nuestra pasión por lo que hacemos y por las personas para quienes lo hacemos es lo que nos impulsa.",
           "section.3.title": "Somos más de 350 personas de 30 países diferentes, con oficinas en Berlín, Los Ángeles y Tokio.",
-          "section.4.title": "Creemos que se necesita concentración para crear instrumentos verdaderamente excepcionales.",
+          "section.3.text": "Muchos de nosotros somos músicos, productores y DJs activos, y usamos Live y Push todos los días. Venimos de diversos contextos culturales y profesionales, pero compartimos la creencia de que todos podemos contribuir al futuro de la cultura musical.",
+          "section.4.title": "Creemos que se necesita concentración para crear instrumentos verdaderamente excepcionales. Trabajamos en pocos productos y nos esforzamos por que sean excelentes.",
+          "section.4.text": "En lugar de aplicar un proceso único, intentamos ofrecer a nuestros equipos lo que necesitan para desarrollar su creatividad y crecer. Hemos aprendido que los mejores resultados provienen de equipos diversos capaces de ver los problemas desde diferentes perspectivas.",
           "section.5.title": "Nos apasiona lo que hacemos, pero también nos apasiona mejorar como personas.",
-          "section.7.title": "Queremos que nuestros empleados disfruten de trabajar aquí.",
-          "section.8.title": "Estamos orgullosos de lo que hemos logrado hasta ahora, pero aún queda mucho por venir. ¡Únete a nosotros!"
+          "section.5.text": "Nos esforzamos por fomentar un entorno donde las personas puedan crecer tanto personal como profesionalmente, y donde haya muchas oportunidades para aprender unos de otros.",
+          "section.6.text": "Junto con un programa interno de formación, apoyamos activamente a los empleados en la adquisición de nuevos conocimientos y habilidades, y les ayudamos a aplicarlos en su trabajo diario. Además, los encuentros organizados por el personal son oportunidades para debatir sobre nuevas tecnologías, técnicas de producción y buenas prácticas.",
+          "section.7.title": "Queremos que nuestros empleados disfruten trabajando aquí. Buscamos talento excepcional de todo el mundo y hacemos todo lo posible para facilitar su integración.",
+          "section.7.text": "Si te unes a nosotros en Berlín, te ayudaremos con la mudanza y la documentación. También ofrecemos clases gratuitas de alemán o inglés, y beneficios como seguro médico integral y licencias de maternidad y paternidad. El horario de trabajo es flexible y organizamos diversas actividades sociales durante el año.",
+          "section.8.title": "Estamos muy orgullosos de lo que hemos logrado hasta ahora, pero aún queda mucho por hacer. Si quieres ser parte de ello, ¡únete a nosotros!"
         }
 };
 
@@ -121,7 +133,9 @@ if(languageSwitcher) {
 
 window.addEventListener("load", () => {
      const savedLang = localStorage.getItem("lang") || "en";
-     languageSwitcher.value = savedLang;
+     if(languageSwitcher) {
+          languageSwitcher.value = savedLang;
+     }
      updateLanguage(savedLang);
 });
 
@@ -145,4 +159,3 @@ function handleCollapsible () {
         toggleIcon.classList.add("bx-plus");
    }
 }
-
