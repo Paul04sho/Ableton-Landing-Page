@@ -159,3 +159,17 @@ function handleCollapsible () {
         toggleIcon.classList.add("bx-plus");
    }
 }
+
+// Function to toggle the Menu button
+function setOpenNav () {
+     let navbar = document.querySelector('.main-nav-content');
+     let menuLogo = document.querySelector('.menu-toggle');
+     let abletonLogo = document.querySelector('.main-site-logo')
+
+     menuLogo.classList.toggle("white-menu-toggle");
+     navbar.classList.toggle("visible-nav");
+     menuLogo.classList.toggle("rotate");
+
+     // Logo turns to white once menu is clicked
+     abletonLogo.classList.toggle("white-logo");
+}
