@@ -325,6 +325,13 @@ footer{
   background: var(--color-yellow);
 }
 
+.gallery-2-container{
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+  margin-right: 0;
+  margin-left: 8.3vw;
+}
+
 .gallery-2 .left-col{
   display: flex;
   flex-direction: column;
