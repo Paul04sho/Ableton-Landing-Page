@@ -326,17 +326,6 @@ footer{
 }
 
 
-.gallery-2{
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.gallery-2 .left-col,
-.gallery-2-right-img{
-  flex: 1;
-}
-
 .gallery-2 .left-col{
   display: flex;
   flex-direction: column;
@@ -705,12 +694,12 @@ option {
   }
 
   .gallery-2 img:last-child {
-    width: 35vw;
+    width: 41vw;
   }
 
   .gallery-2 .left-col img {
-    width: 28vw;
-    height: 21vw;
+    width: 33vw;
+    height: 24vw;
   }
 
   .gallery-4 img:first-child {
